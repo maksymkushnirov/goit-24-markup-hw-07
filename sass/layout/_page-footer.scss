@@ -1,0 +1,146 @@
+// Footer
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+// Contacts
+
+.contacts {
+  margin-right: 84px;
+
+  & .logo {
+    display: block;
+    font-family: $logo-font;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration: none;
+
+    .secondary-color {
+      color: $primary-white-color;
+    }
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .google-map {
+    font-style: normal;
+    color: $primary-white-color;
+  }
+
+  .contacts-text {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Join
+
+.join {
+  margin-right: 94px;
+
+  &-set {
+    display: flex;
+
+    .item:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .button {
+      @include flex();
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      background-repeat: no-repeat;
+
+      @include transition(background-color);
+    }
+
+    & .button:hover,
+    & .button:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+// Mailing
+
+.mailing-form {
+  display: flex;
+
+  .mailing-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $primary-white-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  .mailing-submit {
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 4px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+
+      background-image: url("../images/footer/mailing-icon.svg");
+    }
+  }
+}

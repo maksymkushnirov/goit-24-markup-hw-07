@@ -1,0 +1,36 @@
+// Feature
+
+.feature-list {
+  display: flex;
+
+  .item {
+    width: 270px;
+
+    .icon-wrap {
+      @include flex();
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-color: $secondary-white-color;
+    }
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.143;
+      text-transform: uppercase;
+      color: $secondary-text-color;
+    }
+
+    .text {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

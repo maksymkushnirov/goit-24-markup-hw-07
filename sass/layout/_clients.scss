@@ -1,0 +1,35 @@
+// Clients
+
+.clients-list {
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & .button {
+    @include flex();
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+
+    .button-icon {
+      fill: #afb1b8;
+
+      @include transition(fill);
+    }
+  }
+
+  .button:hover .button-icon,
+  .button:focus .button-icon {
+    fill: $accent-color;
+  }
+}
