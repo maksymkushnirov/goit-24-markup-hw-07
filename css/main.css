@@ -355,17 +355,17 @@ img {
   margin-right: 30px;
 }
 
-.exemples-list {
+.examples-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.exemples-list .item:not(:last-child) {
+.examples-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.exemples-list .title {
+.examples-list .title {
   position: absolute;
   bottom: 0;
   left: 0;
