@@ -1,4 +1,4 @@
-// Feature
+// section-advantages
 
 .feature-list {
   display: flex;
@@ -12,7 +12,7 @@
       height: 120px;
       margin-bottom: 30px;
       border-radius: 4px;
-      background-color: $secondary-white-color;
+      background-color: $color-white-secondary;
     }
 
     .title {
@@ -21,7 +21,7 @@
       font-size: 14px;
       line-height: 1.143;
       text-transform: uppercase;
-      color: $secondary-text-color;
+      color: $color-text-secondary;
     }
 
     .text {

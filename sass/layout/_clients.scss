@@ -1,4 +1,4 @@
-// Clients
+// clients
 
 .clients-list {
   display: flex;
@@ -18,7 +18,7 @@
 
     &:hover,
     &:focus {
-      border-color: $accent-color;
+      border-color: $color-accent;
     }
 
     .button-icon {
@@ -30,6 +30,6 @@
 
   .button:hover .button-icon,
   .button:focus .button-icon {
-    fill: $accent-color;
+    fill: $color-accent;
   }
 }

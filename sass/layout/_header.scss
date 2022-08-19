@@ -1,18 +1,18 @@
-// Header
+// header
 
 .page-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   z-index: 2;
 
   .container.main-nav {
     display: flex;
     align-items: center;
 
-    //  Main nav
+// header-nav
 
     .main-nav {
       display: flex;
@@ -21,11 +21,11 @@
   }
 }
 
-// Logo
+// header-logo
 
 .logo {
   font-family: $logo-font;
-  color: $accent-color;
+  color: $color-accent;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -37,7 +37,7 @@
   }
 }
 
-// Site nav
+// header-nav-menu
 
 .site-nav {
   display: flex;
@@ -52,7 +52,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: $secondary-text-color;
+    color: $color-text-secondary;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -63,11 +63,11 @@
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: $color-accent;
     }
 
     &.current {
-      color: $accent-color;
+      color: $color-accent;
 
       &::after {
         content: "";
@@ -78,13 +78,13 @@
         width: 100%;
         height: 4px;
         border-radius: 2px;
-        background-color: $accent-color;
+        background-color: $color-accent;
       }
     }
   }
 }
 
-// Auth-nav
+// header-contacts
 
 .auth-nav {
   display: flex;
@@ -101,27 +101,27 @@
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: $primary-text-color;
+    color: $color-text-primary;
     text-decoration: none;
 
     @include transition(color);
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: $color-accent;
     }
 
     .link-icon {
       display: block;
       margin-right: 10px;
-      fill: $primary-text-color;
+      fill: $color-text-primary;
 
       @include transition(fill);
     }
 
     &:hover .link-icon,
     &:focus .link-icon {
-      fill: $accent-color;
+      fill: $color-accent;
     }
   }
 

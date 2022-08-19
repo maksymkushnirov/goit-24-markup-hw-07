@@ -1,6 +1,4 @@
-html {
-  box-sizing: border-box;
-}
+// base
 
 *,
 *::before,
@@ -8,32 +6,19 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: $primary-font;
+  font-family: $font-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
-  color: $primary-text-color;
-  background-color: #ffffff;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  min-width: 100%;
-  height: auto;
+  color: $color-text-primary;
+  background-color: rgb(255, 255, 255);
 }
 
 .list {
@@ -48,6 +33,23 @@ img {
   border: none;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 .relative {
   position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

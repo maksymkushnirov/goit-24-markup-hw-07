@@ -1,4 +1,4 @@
-// Backdrop
+// modal
 
 .backdrop {
   position: fixed;
@@ -9,7 +9,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  // transition: opacity 250ms $timing-function;
   @include transition(opacity);
   z-index: 3;
 
@@ -22,15 +21,13 @@
     }
   }
 
-  // Modal
-
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 40px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -45,7 +42,7 @@
       font-size: 20px;
       line-height: 1.15;
       text-align: center;
-      color: $secondary-text-color;
+      color: $color-text-secondary;
     }
 
     .close-modal {
@@ -63,7 +60,7 @@
       border-radius: 50%;
       cursor: pointer;
 
-      background-color: #fff;
+      background-color: rgb(255, 255, 255);
 
       .button-icon {
         fill: #000;
@@ -72,7 +69,7 @@
 
       &:hover > .button-icon,
       &:focus > .button-icon {
-        fill: $accent-color;
+        fill: $color-accent;
       }
     }
   }
