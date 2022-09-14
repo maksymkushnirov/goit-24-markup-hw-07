@@ -9,73 +9,60 @@ Task:\
 https://github.com/goitacademy/html-css-homework \
 https://github.com/goitacademy/html-css-homework/blob/master/7-bem-sass/README.en.md
 
-**Read in other languages: [Russian](README.md), [Ukrainian](README.ua.md),
-[English](README.en.md), [Spanish](README.es.md), [Polish](README.pl.md).**
-
 # Homework
 
-- Create a repository `goit-markup-hw-01`.
-- Make HTML markup for the
-  [**homework #1**](https://www.figma.com/file/5vQ5fIsm5p6Mfqhl0Ee2qB/Web-Studio-ENG?node-id=0%3A1)
-  page layout, without CSS styling.
+- Create a repository `goit-markup-hw-07`.
+- Clone the created repository and copy the previous work files into it.
 - Set up `GitHub Pages` and add a link to the live page in the header of the
   GitHub repository.
 
+## Project file structure
+
+![Project file structure](./preview.svg)
+
 ## Criteria for work acceptance by the tutor
 
-### Project
+## Project
 
-**`«A1»`** The main HTML file is called `index.html`.
+**`«A1»`** Refactoring of the project HTML-code is done using the BEM
+methodology.
 
-**`«A2»`** In the root of the project, there is a folder called `images`, which
-contains images.
+**`«A2»`** Refactoring of the project CSS code is done using the `SASS`
+preprocessor.
 
-**`«A3»`** There are no capital letters, spaces and transliteration in the file
-names, only English letters and words.
+**`«A3»`** In the root of the project, there is a `sass` folder, which contains
+all the preprocessor style sheets.
 
-**`«A4»`** Source code is formatted with `Prettier`.
+**`«A4»`** In the `sass` folder, there is a `main.scss` file, the main file into
+which all SASS fragments are imported (partials, `_name.scss` files).
 
-**`«A5»`** All images and text content are taken from the layout.
+**`«A5»`** Layout color palette and font sets are presented as variables in the
+`variables.scss` file in the `sass/utils` folder. CSS or SASS variables can be
+used (optionally).
 
-**`«A6»`** All raster images are optimized using
-[**squoosh**](https://squoosh.app/).
+**`«A6»`** For each component, a separate fragment style sheet is created in the
+`sass/components` folder. For example, `_page-header.scss`, `_logo.scss`, etc.
 
-**`«A7»`** The code is in line with the [**guide**](https://codeguide.co/).
+**`«A7»`** In the `index.html` and `portfolio.html` files, a minified style
+sheet, `main.min.css` from the `css` folder, is linked.
 
-### Markup
+## Markup
 
-**`«B1»`** The `Studio` page layout is in the `index.html` file.
+**`«B1»`** Proper naming of box classes according to the BEM methodology.
 
-**`«B2»`** HTML-markup is done for all layout elements.
+**`«B2»`** Proper naming of element classes according to the BEM methodology.
 
-**`«B3»`** Tags are used according to their semantics.
+**`«B3»`** Proper naming of modifier classes according to BEM methodology.
 
-**`«B4»`** HTML can be validated using
-[**validator**](http://validator.w3.org/nu/) without errors.
+**`«B4»`** Proper naming of mixin classes according to BEM methodology.
 
-**`«B5»`** There are tags in the markup for web page structuring: `<header>`,
-`<main>` and `<footer>`.
+**`«B5»`** BEM class names are clear and descriptive, all in English.
 
-**`«B6»`** The logo in the header and footer is a link with text, not an image.
+## Styling
 
-**`«B7»`** The `<nav>` tag is used only once, in the page header.
+**`«C1»`** Selector nesting is used.
 
-**`«B8»`** Contacts in the header (mail and phone) are outside the `<nav>` tag.
+**`«C2»`** Maximum selector nesting is 2 levels.
 
-**`«B9»`** The `<h1>` tag is used once per page.
-
-**`«B10»`** An element with the text `"Order a service"` is a button with
-`type ="button"`.
-
-**`«B11»`** Section headings are marked with `<h2>`.
-
-**`«B12»`** All `<img>` tags have size attributes, at least `width`.
-
-**`«B13»`** All `<img>` tags have the `alt` attribute, which contains a brief
-description of what is shown in the picture.
-
-**`«B14»`** Images are exported from the layout in `jpg` format.
-
-**`«B15»`** Groups of the same-type elements are in `<ul>` lists.
-
-**`«B16»`** The `<address>` tag is only used in the footer.
+**`«C3»`** The concatenation operator (`&`) is used to describe pseudo-classes
+and pseudo-elements.
